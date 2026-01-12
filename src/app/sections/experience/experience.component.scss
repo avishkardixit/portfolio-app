@@ -1,0 +1,17 @@
+.exp {
+  display: flex;
+  gap: 40px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  color: var(--muted);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  color: var(--green);
+  border-left: 2px solid var(--green);
+}

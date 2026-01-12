@@ -1,0 +1,25 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 25, 47, 0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  z-index: 100;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green);
+}

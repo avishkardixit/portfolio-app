@@ -1,0 +1,6 @@
+.tech {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 10px;
+  color: var(--muted);
+}

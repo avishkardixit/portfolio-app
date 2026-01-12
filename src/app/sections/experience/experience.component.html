@@ -1,0 +1,23 @@
+<section id="experience">
+  <h2>Where I've Worked</h2>
+
+  <div class="exp">
+    <div class="tabs">
+      <button 
+        *ngFor="let job of jobs; let i = index"
+        (click)="selected = i"
+        [class.active]="selected === i">
+        {{ job.company }}
+      </button>
+    </div>
+
+    <div class="content">
+      <h3>{{ jobs[selected].role }}</h3>
+      <p class="time">{{ jobs[selected].time }}</p>
+
+      <ul>
+        <li *ngFor="let p of jobs[selected].points">{{ p }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

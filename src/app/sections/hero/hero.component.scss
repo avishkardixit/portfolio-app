@@ -1,0 +1,40 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 64px;
+}
+
+.subtitle {
+  font-size: 56px;
+  color: var(--muted);
+}
+
+.desc {
+  max-width: 540px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.btn {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
