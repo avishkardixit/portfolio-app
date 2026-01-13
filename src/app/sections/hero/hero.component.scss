@@ -6,33 +6,33 @@
 }
 
 .intro {
-  color: var(--green);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
-.name {
-  font-size: 64px;
+h1 {
+  font-size: 72px;
+  line-height: 1.1;
 }
 
-.subtitle {
-  font-size: 56px;
+h2 {
+  font-size: 64px;
   color: var(--muted);
 }
 
 .desc {
   max-width: 540px;
-  margin-top: 20px;
+  margin-top: 24px;
   color: var(--muted);
 }
 
 .btn {
   margin-top: 40px;
-  display: inline-block;
-  padding: 12px 24px;
-  border: 1px solid var(--green);
-  color: var(--green);
+  padding: 14px 28px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   text-decoration: none;
-  transition: 0.2s;
+  width: fit-content;
 }
 
 .btn:hover {

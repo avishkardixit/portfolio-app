@@ -1,16 +1,14 @@
-.nav {
+nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(10, 25, 47, 0.9);
-  display: flex;
-  justify-content: space-between;
+  background: rgba(10,25,47,0.9);
   padding: 20px 60px;
-  z-index: 100;
 }
 
 ul {
   display: flex;
+  justify-content: flex-end;
   gap: 30px;
   list-style: none;
 }
@@ -20,6 +18,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--green);
+.active a {
+  color: var(--accent);
+  transform: translateX(4px);
 }

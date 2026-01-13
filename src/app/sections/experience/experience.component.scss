@@ -3,15 +3,25 @@
   gap: 40px;
 }
 
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
 .tabs button {
   background: none;
   border: none;
   color: var(--muted);
   padding: 10px;
+  text-align: left;
   cursor: pointer;
 }
 
 .tabs .active {
-  color: var(--green);
-  border-left: 2px solid var(--green);
+  color: var(--accent);
+  border-left: 2px solid var(--accent);
+}
+
+.details {
+  max-width: 600px;
 }

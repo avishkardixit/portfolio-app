@@ -1,16 +1,11 @@
-.projects {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: #112240;
+  background: var(--card);
   padding: 20px;
   border-radius: 6px;
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }

@@ -9,19 +9,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
- selected = 0;
+  selected = 0;
 
   jobs = [
     {
       company: 'Accenture',
       role: 'Full Stack Developer',
       time: '2023 - Present',
-      points: [
-        'Angular enterprise UI',
-        'Kendo UI components',
-        '.NET APIs',
-        'Large scale systems'
-      ]
+      points: ['Angular UI', 'Kendo UI', '.NET APIs']
     },
     {
       company: 'Internship',
