@@ -9,3 +9,8 @@
   padding: 20px;
   border-radius: 6px;
 }
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -9,5 +9,10 @@ import { LeftSocialComponent } from "../../layout/left-social/left-social.compon
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-
+  downloadResume() {
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // Change this to your resume file name
+    link.download = 'Resume.pdf';
+    link.click();
+  }
 }

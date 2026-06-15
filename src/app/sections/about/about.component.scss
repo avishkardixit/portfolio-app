@@ -1,6 +1,41 @@
-.tech {
-  display: grid;
-  grid-template-columns: repeat(2, 150px);
-  gap: 10px;
+.about-content {
+  max-width: 700px;
+}
+
+.highlight {
+  font-size: 18px;
+  color: var(--light);
+  font-weight: 600;
+}
+
+.about-content p {
+  margin-bottom: 16px;
   color: var(--muted);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.skills li::before {
+  content: "▹ ";
+  color: var(--accent);
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+/* 👇 Mobile fix */
+@media (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr; /* one column only */
+  }
 }

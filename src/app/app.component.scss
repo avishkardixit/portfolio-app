@@ -1,10 +1,11 @@
 .page {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .content {
   width: 100%;
-  max-width: 1000px;
-  padding: 0 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
 }

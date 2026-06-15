@@ -12,5 +12,6 @@ export class LeftSocialComponent {
   public githubLink = 'https://github.com/avishkardixit';
   public linkedinLink = 'https://linkedin.com/in/avishkardixit';
   public instagramLink = 'https://instagram.com/avishkar.dixit';
+  public xLink = 'https://x.com/AvishkarDixit';
 
 }

@@ -8,7 +8,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-active = 'hero';
+  active = 'hero';
 
   @HostListener('window:scroll')
   onScroll() {
@@ -20,4 +20,6 @@ active = 'hero';
       }
     }
   }
+
+
 }

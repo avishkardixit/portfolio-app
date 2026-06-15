@@ -1,6 +1,94 @@
 <section id="contact">
-  <h2 class="section-title"><span>04.</span> Contact</h2>
+  <h2 class="section-title"><span>04.</span> Get In Touch</h2>
 
-  <p>Open to opportunities. Let's talk.</p>
-  <a class="btn" href="mailto:test@email.com">Say Hello</a>
+  <!-- TOAST POPUP -->
+  <div 
+    class="toast" 
+    *ngIf="showToast"
+    [class.success]="toastType === 'success'"
+    [class.error]="toastType === 'error'">
+    {{ status }}
+  </div>
+
+  <p class="intro">
+    I'm currently open to opportunities and collaborations.  
+    Feel free to reach out using the form below.
+  </p>
+
+  <form class="contact-form" (ngSubmit)="sendMessage(f)" #f="ngForm" novalidate>
+
+  <div class="row">
+
+    <!-- NAME -->
+    <div class="field">
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        pattern="^[a-zA-Z ]+$"
+        [(ngModel)]="form.name"
+        #name="ngModel" />
+
+      <small *ngIf="name.invalid && (name.touched || f.submitted)">
+        Name should contain only letters and spaces
+      </small>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="field">
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+        email
+        [(ngModel)]="form.email"
+        #email="ngModel" />
+
+      <small *ngIf="email.invalid && (email.touched || f.submitted)">
+        Please enter a valid email.
+      </small>
+    </div>
+  </div>
+
+  <!-- MOBILE -->
+  <div class="field">
+    <input
+      type="tel"
+      name="mobile"
+      placeholder="Mobile Number"
+      required
+      pattern="^[0-9]{10}$"
+      maxlength="10"
+      [(ngModel)]="form.mobile"
+      #mobile="ngModel" />
+
+    <small *ngIf="mobile.invalid && (mobile.touched || f.submitted)">
+      Mobile number must be exactly 10 digits
+    </small>
+  </div>
+
+  <!-- MESSAGE -->
+  <div class="field">
+    <textarea
+      name="message"
+      rows="5"
+      placeholder="Your Message"
+      required
+      [(ngModel)]="form.message"
+      #message="ngModel">
+    </textarea>
+
+    <small *ngIf="message.invalid && (message.touched || f.submitted)">
+      Message is required
+    </small>
+  </div>
+
+  <button class="send-btn" type="submit" [disabled]="f.invalid || isSending">
+    {{ isSending ? 'Sending...' : 'Send Message' }}
+  </button>
+</form>
+
+
 </section>
